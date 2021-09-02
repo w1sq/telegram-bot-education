@@ -1,0 +1,823 @@
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'Message' object has no attribute 'message'")>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 138, in proceed_time
+    message = call.message
+AttributeError: 'Message' object has no attribute 'message'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'Message' object has no attribute 'message'")>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 138, in proceed_time
+    message = call.message
+AttributeError: 'Message' object has no attribute 'message'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'Message' object has no attribute 'message'")>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 155, in proceed_time
+    await events[f'#{day}_day'](message)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 218, in first_day
+    message = call.message
+AttributeError: 'Message' object has no attribute 'message'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'Message' object has no attribute 'message'")>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 155, in proceed_time
+    await events[f'#{day}_day'](call = message,mode=True)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 218, in first_day
+    message = call.message
+AttributeError: 'Message' object has no attribute 'message'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-37' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=ValueError("invalid literal for int() with base 10: '/start'")>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 145, in proceed_time
+    secs = int(message.text)
+ValueError: invalid literal for int() with base 10: '/start'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=KeyError('#0_day_material')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 320, in ans
+    await events[command[0]](call,*command[1:])
+KeyError: '#0_day_material'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=KeyError('#0_day_material')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 320, in ans
+    await events[command[0]](call,*command[1:])
+KeyError: '#0_day_material'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-54' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=KeyError('#0_day_material')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 320, in ans
+    await events[command[0]](call,*command[1:])
+KeyError: '#0_day_material'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: users.name')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: users.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 320, in ans
+    await events[command[0]](call,*command[1:])
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 169, in anketa
+    db_sess.commit()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 1415, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3233, in flush
+    self._flush(objects)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3373, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\python\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3333, in _flush
+    flush_context.execute()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\python\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.name
+[SQL: INSERT INTO users (telegram_id, authorized, day) VALUES (?, ?, ?)]
+[parameters: (1738833593, 0, 0)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: users.name')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: users.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 320, in ans
+    await events[command[0]](call,*command[1:])
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 169, in anketa
+    db_sess.commit()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 1415, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3233, in flush
+    self._flush(objects)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3373, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\python\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3333, in _flush
+    flush_context.execute()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\python\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.name
+[SQL: INSERT INTO users (telegram_id, authorized, day) VALUES (?, ?, ?)]
+[parameters: (1738833593, 0, 0)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: users.name')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: users.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 324, in ans
+    await events[command[0]](call,*command[1:])
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 173, in anketa
+    db_sess.commit()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 1415, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3233, in flush
+    self._flush(objects)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3373, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\python\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3333, in _flush
+    flush_context.execute()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\python\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.name
+[SQL: INSERT INTO users (telegram_id, authorized, day) VALUES (?, ?, ?)]
+[parameters: (1738833593, 0, 0)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: users.name')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: users.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 324, in ans
+    await events[command[0]](call,*command[1:])
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 173, in anketa
+    db_sess.commit()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 1415, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3233, in flush
+    self._flush(objects)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3373, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\python\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3333, in _flush
+    flush_context.execute()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\python\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.name
+[SQL: INSERT INTO users (telegram_id, authorized, day) VALUES (?, ?, ?)]
+[parameters: (1738833593, 0, 0)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=IntegrityError('(sqlite3.IntegrityError) NOT NULL constraint failed: users.name')>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: users.name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 326, in ans
+    await events[command[0]](call,*command[1:])
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 175, in anketa
+    db_sess.commit()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 1415, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 829, in commit
+    self._prepare_impl()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3233, in flush
+    self._flush(objects)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3373, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\python\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\orm\session.py", line 3333, in _flush
+    flush_context.execute()
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 453, in execute
+    rec.execute(self)
+  File "C:\python\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 627, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "C:\python\lib\site-packages\sqlalchemy\orm\persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\python\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\python\lib\site-packages\sqlalchemy\util\compat.py", line 198, in raise_
+    raise exception
+  File "C:\python\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "C:\python\lib\site-packages\sqlalchemy\engine\default.py", line 681, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.name
+[SQL: INSERT INTO users (telegram_id, authorized, day) VALUES (?, ?, ?)]
+[parameters: (1738833593, 0, 0)]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<Dispatcher._process_polling_updates() done, defined at C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'datetime.datetime' object has no attribute 'split'")>
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\python\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "c:\Users\79152\Google Drive\all_python\telegram\Date_invest\main.py", line 170, in proceed_time
+    await message.answer(f'\u0425\u043e\u0440\u043e\u0448\u043e, \u044f \u0442\u0435\u0431\u0435 \u043d\u0430\u043f\u043e\u043c\u043d\u044e {"\u0447\u0435\u0440\u0435\u0437".join(alarm.split())}')
+AttributeError: 'datetime.datetime' object has no attribute 'split'
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:aiogram.dispatcher.dispatcher:Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\python\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 383, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\python\lib\site-packages\aiogram\bot\bot.py", line 97, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\python\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\python\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\python\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+.vscode/*
+__pycache__/*
+key.py
