@@ -19,6 +19,14 @@ from db_data import db_session
 from db_data.__all_models import Users
 from sqlite3 import IntegrityError
 
+anketa_url = 'https://docs.google.com/forms/d/e/1FAIpQLSeWhaRPIJYR_mRkZGLbrg8l4Zlm0ycKnNIMDHo1GbEqQ9pw6w/viewform?usp=sf_link'
+first_mat_url = 'https://docs.google.com/presentation/d/1W-nfDvOCzSpgkyvL_Tk2qy6aNKaCjvYrk0pVrL9cdz8/edit?usp=sharing'
+first_test_url = 'https://docs.google.com/forms/d/e/1FAIpQLSfGhzDqgEfDbWeK34TkSro39lZsDT42kJYiQrbg7KsfHh2gxQ/viewform?usp=sf_link'
+second_mat_url = 'https://docs.google.com/presentation/d/1Y8Zg2mnGAyT4NCPD56GKYv9ZasvjFhRXiAFxBYuvxPA/edit?usp=sharing'
+second_test_url = 'https://docs.google.com/forms/d/e/1FAIpQLSeobRQILqKKWWK5Mj7bQsbT1kHr4H2RonouaXpX6QI1QRmawg/viewform?usp=sf_link'
+third_mat_url = 'https://docs.google.com/presentation/d/1XHbotRh6ve3FsNv_f7IP-Jw5QghIQOCP7MWaCBGfUDw/edit?usp=sharing'
+third_test_url = 'https://docs.google.com/forms/d/e/1FAIpQLSe8MYZbbtFWPtEoVcAJ-_kKh2FSmtofYfumDgfiY6ryvakkCg/viewform?usp=sf_link'
+
 with open('key.txt','r') as file:
     API_KEY = file.readline()
 logging.basicConfig(level=logging.INFO, filename='botlogs.log')
@@ -84,34 +92,34 @@ async def set_commands(bot: Bot):
     await bot.set_my_commands(commands)
 
 anketa_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Заполнить анкету',url='https://docs.google.com/forms/d/e/1FAIpQLSeWhaRPIJYR_mRkZGLbrg8l4Zlm0ycKnNIMDHo1GbEqQ9pw6w/viewform?usp=sf_link')).row\
+(InlineKeyboardButton(text= 'Заполнить анкету',url=anketa_url)).row\
     (InlineKeyboardButton(text='Я заполнил анкету',callback_data='#anketa'))
 
 cancel_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
 (InlineKeyboardButton(text='Отменить',callback_data='cancel'))
 
 first_day_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Материал первого дня',url='https://docs.google.com/presentation/d/1W-nfDvOCzSpgkyvL_Tk2qy6aNKaCjvYrk0pVrL9cdz8/edit?usp=sharing')).row\
+(InlineKeyboardButton(text= 'Материал первого дня',url=first_mat_url)).row\
     (InlineKeyboardButton(text='Прочитал',callback_data='#1_day_test'))
 
 first_test_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Перейти к тесту',url='https://docs.google.com/forms/d/e/1FAIpQLSfGhzDqgEfDbWeK34TkSro39lZsDT42kJYiQrbg7KsfHh2gxQ/viewform?usp=sf_link')).row\
+(InlineKeyboardButton(text= 'Перейти к тесту',url=first_test_url)).row\
     (InlineKeyboardButton(text='Выполнил',callback_data='#1_day_quest'))
 
 second_day_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Материал второго дня',url='https://docs.google.com/presentation/d/1Y8Zg2mnGAyT4NCPD56GKYv9ZasvjFhRXiAFxBYuvxPA/edit?usp=sharing')).row\
+(InlineKeyboardButton(text= 'Материал второго дня',url=second_mat_url)).row\
     (InlineKeyboardButton(text='Прочитал',callback_data='#2_day_test'))
 
 second_test_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Перейти к тесту',url='https://docs.google.com/forms/d/e/1FAIpQLSeobRQILqKKWWK5Mj7bQsbT1kHr4H2RonouaXpX6QI1QRmawg/viewform?usp=sf_link')).row\
+(InlineKeyboardButton(text= 'Перейти к тесту',url=second_test_url)).row\
     (InlineKeyboardButton(text='Выполнил',callback_data='#2_day_quest'))
 
 third_day_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Материал третьего дня',url='https://docs.google.com/presentation/d/1XHbotRh6ve3FsNv_f7IP-Jw5QghIQOCP7MWaCBGfUDw/edit?usp=sharing')).row\
+(InlineKeyboardButton(text= 'Материал третьего дня',url=third_mat_url)).row\
     (InlineKeyboardButton(text='Прочитал',callback_data='#3_day_test'))
 
 third_test_keyb = InlineKeyboardMarkup(resize_keyboard=True).row\
-(InlineKeyboardButton(text= 'Перейти к тесту',url='https://docs.google.com/forms/d/e/1FAIpQLSe8MYZbbtFWPtEoVcAJ-_kKh2FSmtofYfumDgfiY6ryvakkCg/viewform?usp=sf_link')).row\
+(InlineKeyboardButton(text= 'Перейти к тесту',url=third_test_url)).row\
     (InlineKeyboardButton(text='Выполнил',callback_data='#3_day_quest'))
 
 @dp.message_handler(commands=['start'])
@@ -182,21 +190,21 @@ async def cancel_handler(state: FSMContext):
     await state.finish()
 
 async def anketa(call,*args):
+    message = call.message
     try:
-        message = call.message
-        db_sess = db_session.create_session()
         user_name = message.chat.username
-        user = db_sess.query(Users).get(user_name)
-        if not user:
-            user=Users(name=message.chat.username,telegram_id=message.chat.id)
-            db_sess.add(user)
-            db_sess.commit()
-            db_sess.close()
-            await bot.send_message('1729616674', f'@{message.chat.username} заполнил анкету',reply_markup=generate_inline_keyboard(['Допустить',f'#pass {message.chat.id} {message.chat.username}']))
-            await message.answer('Подожди, пока координатор ознакомиться с твоей анкетой')
     except Exception:
         await message.answer('Создайте уникальный nickname для телеграма чтобы воспользоваться ботом.')
         return
+    db_sess = db_session.create_session()
+    user = db_sess.query(Users).get(user_name)
+    if not user:
+        user=Users(name=message.chat.username,telegram_id=message.chat.id)
+        db_sess.add(user)
+        db_sess.commit()
+        db_sess.close()
+        await bot.send_message('1729616674', f'@{message.chat.username} заполнил анкету',reply_markup=generate_inline_keyboard(['Допустить',f'#pass {message.chat.id} {message.chat.username}']))
+        await message.answer('Подожди, пока координатор ознакомится с твоей анкетой')
         
 async def cancel(call,*args):
     await cancel_handler(state=call.state)

@@ -7,4 +7,4 @@ class Users(SqlAlchemyBase):
     name = sqlalchemy.Column(sqlalchemy.String, nullable=False, primary_key=True)
     telegram_id = sqlalchemy.Column(sqlalchemy.Integer, nullable=False)
     authorized = sqlalchemy.Column(sqlalchemy.Boolean, default = False)
-    day = sqlalchemy.Column(sqlalchemy.Integer,default=0)
+    day = sqlalchemy.Column(sqlalchemy.Integer,default=1)
